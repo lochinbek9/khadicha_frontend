@@ -28,9 +28,9 @@ function Footer() {
                   aria-label="Your Email"
                   aria-describedby="basic-addon2"
                 />
-                <span className="input-group-text p-2" id="basic-addon2">
+                <button className="input-group-text p-2" id="basic-addon2">
                   <a href="#contact">Subscribe</a>
-                </span>
+                </button>
               </div>
             </div>
           </div>

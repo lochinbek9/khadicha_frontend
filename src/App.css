@@ -9,6 +9,9 @@
   --color-febd69: #febd69;
   --color-232f3e: #232f3e;
   --color-bf4800: #bf4800;
+  --color-f5f5f7: #f5f5f7;
+  --color-ededed: #ededed;
+  --color-777777: #777777;
 }
 html {
   scroll-behavior: smooth;
@@ -36,6 +39,11 @@ a {
   width: 1300px;
 }
 
+.card-wrapper {
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 0 10px #0000001a;
+}
 .form-control:focus {
   box-shadow: none;
   border: inherit;
@@ -59,8 +67,17 @@ a {
 
 /* ------HEADER-PART------ */
 .button {
+  padding: 13px 33px;
   background-color: var(--color-232f3e);
   color: white;
+  font-size: 14px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  color: #131921;
+  background-color: var(--color-febd69);
 }
 .header-top-strip {
   border-bottom: 1px solid var(--color-3b4149);
@@ -74,6 +91,10 @@ a {
   background-color: var(--color-232f3e);
 }
 .header-upper .input-group-text {
+  background-color: var(--color-febd69);
+}
+
+.input-group-text {
   background-color: var(--color-febd69);
 }
 
@@ -131,6 +152,7 @@ a {
 /* -------END-FOOTER-PART-------- */
 
 /* ------HOME-PAGE-------- */
+
 .main-banner-content {
   top: 10%;
   left: 5%;
@@ -160,4 +182,112 @@ a {
   letter-spacing: 0.4px;
   color: var(--color-131921);
 }
-/* ------END-HOME-PAGE-------- */
+
+.small-banner {
+  width: 49%;
+}
+
+.small-banner-content {
+  top: 25%;
+  left: 10%;
+}
+
+.small-banner-content h4 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-bf4800);
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.small-banner-content h5 {
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -2px;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.small-banner-content p {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.4px;
+  color: var(--color-131921);
+}
+
+.small-banner {
+  width: 49%;
+}
+
+/* --------HOME-WRAPPER-2------ */
+.home-wrapper-2 {
+  background-color: var(--color-f5f5f7);
+}
+/* --------HOME-WRAPPER-2 ENDS------ */
+
+/* ---------CATEGORIES-SECTION-------- */
+.categories {
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0 0 10px #0000001a;
+}
+
+.categories > div {
+  padding: 10px 20px 10px 20px;
+  width: 25%;
+}
+
+.categories > div:nth-child(1),
+.categories > div:nth-child(2),
+.categories > div:nth-child(3),
+.categories > div:nth-child(4) {
+  border-bottom: 2px solid var(--color-ededed);
+}
+
+.categories > div:nth-child(1),
+.categories > div:nth-child(2),
+.categories > div:nth-child(3),
+.categories > div:nth-child(4) {
+  border-right: 2px solid var(--color-ededed);
+}
+
+.categories > div:nth-child(5),
+.categories > div:nth-child(6),
+.categories > div:nth-child(7),
+.categories > div:nth-child(8) {
+  border-right: 2px solid var(--color-ededed);
+}
+/* ---------END-CATEGORIES-SECTION-------- */
+/* ---------END-HOME-PAGE----------------- */
+
+/* ---------BLOG-PART-------------------- */
+.blog-card {
+  border-radius: 10px;
+  background-color: white;
+}
+
+.blog-card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.blog-content {
+  padding: 20px;
+}
+
+.blog-content .date {
+  padding: 0;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: var(--color-777777);
+}
+
+.blog-content h5 {
+  font-size: 16px;
+}
+/* ---------END-BLOG-PART---------------- */
